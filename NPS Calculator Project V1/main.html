@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NPS Calculator</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- main calculator app section -->
+    <div id="calculator-box">
+      <h1>NPS Calculator</h1>
+      <div id="enter-amount-section">
+        <h3>Enter Amount ($):</h3>
+        <div>
+          <input type="text" id="amount" />
+        </div>
+      </div>
+      <div>
+        <h3>Enter Client Rate (%):</h3>
+        <div>
+          <input type="text" id="rate" />
+        </div>
+      </div>
+
+      <div id="button-section">
+        <button id="btn1">Calculate</button>
+        <button id="btn2">Reset</button>
+      </div>
+
+      <p id="error-message"></p>
+      <p id="nps"></p>
+    </div>
+
+    <!-- right hand app description  -->
+
+    <div id="description">
+      <p>
+        NPS (Net Publisher Share) is the commission a music publisher claims on
+        a particular licensing job. <br />
+        <br />
+        This application takes in the full amount paid for the job, along with
+        the client's (i.e. writer or sub-publisher) sync rate, and calculates
+        the NPS. <br />
+        <br />
+        This is the first version, designed only to handle works with a single
+        client. Future versions will cater for multiple clients and more complex
+        calculations.
+      </p>
+    </div>
+
+    <!-- javascript -->
+    <script src="calc.js"></script>
+  </body>
+</html>
